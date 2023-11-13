@@ -3,9 +3,12 @@ body {
     text-size-adjust: 12px;
 }
 
+
 * {
     font-family: 'Roboto', sans-serif;
-
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -27,39 +30,52 @@ div {
 }
 
 #imgEnvio {
+    flex-direction:row-reverse ;
     color: #39b54a;
-    border: solid 1px #39b54a;
-    border-radius: 50px;
-    padding: 15px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    top: -15px;
 }
-
+.info{
+    flex-direction: row;
+    display: flex;
+}
 .txtDescuento {
     color: #39b54a;
+    width: 70%;
 
 }
-.imid{
+
+.txtPrec {
+    width: 35%;
+}
+
+.imid {
     text-align: center;
 }
+
 #menu {
-    
+
     background-color: #0000ff;
     border-radius: 10%;
     padding: 1%;
     color: white;
     background-color: #0000ff;
-    
-    
-    
+
+
+
 
 }
 
-.burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
-}
 
 #search-bar {
     text-align: center;
@@ -70,17 +86,22 @@ footer {
     background-color: white;
 
 }
-header{
+
+header {
     background-color: #EAC926;
 }
-nav {
-    
-    align-content: center;
 
-}
+
 
 footer {
     text-align: center;
+}
+.ultima-visita{
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    border: 1px solid #021226;
+    padding: 10px;
 }
 
 svg {
@@ -104,7 +125,20 @@ svg {
     .desc {
         display: none;
     }
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    nav {
+
+        align-content: center;
+    
+    }
 }
-img{
+
+img {
     width: 25%;
 }
