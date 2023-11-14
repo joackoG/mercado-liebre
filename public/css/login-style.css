@@ -1,0 +1,107 @@
+.form {
+    display: flex;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    /* background: rgb(217, 215, 215); */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .input-box input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+    border-radius:10px;
+    width: 100%;
+    font-size: 12px;
+    border: grey 1px solid;
+  }  
+  .input-box label{
+    font-weight: bold;
+  }
+  .form-login label{
+    font-size: 16px;
+  }
+  
+  main {
+    justify-content: center;
+    display: flex;
+  }
+  .form-btn {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .submit-btn{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+  }
+  .borrar-btn{
+    color: white;
+    background-color: rgb(255, 38, 0);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+  }
+  .submit-btn:hover{
+   background-color: #0022AA;
+   cursor: pointer;
+  }
+  .borrar-btn:hover{
+    background-color: rgba(255, 0, 0, 0.678);
+    cursor: pointer;
+  }
+  /* probando pseudoselectores */
+  .error-message {
+    display: none;
+  }
+  
+  .input-box input:invalid .error-message {
+    display: flex;
+  }
+  
+  input:invalid {
+    background-color: #f3e5e5;
+  }
+  
+  
+  
+  input:valid {
+    background-color: #ddffdd;
+  }
+  
+  .columna-caja{
+    display: flex;
+    flex-direction:row;
+    
+  }
+  .lista-input{
+    padding: 20px;
+  }
+  @media (max-width: 480px) {
+    .columna-caja{
+      display: inline;
+    }
+    .form-btn{
+      display: inline;
+    }
+  }
+ 
+ 
+ 
