@@ -37,19 +37,14 @@
             <form class="form-register" action="/register" method="">
 
                 <div class="input-box">
-
                     <input type="text" placeholder="Nombre y Apellido" required pattern=".{4,}"
-                        title="El nombre debe tener al menos 4 caracteres.">
-
-
+                        title="El nombre debe tener al menos 4 (cuatro) caracteres.">
                 </div>
                 <div class="input-box">
-                    <!-- <label for="usuario">Nombre de usuari@:</label> -->
                     <input type="text" placeholder="Nombre de usuario" required pattern=".{3,}"
-                        title="El nombre de usuario debe tener al menos 3 caracteres.">
+                        title="El nombre de usuario debe tener al menos 3 (cuatro) caracteres.">
                 </div>
                 <div class="input-box">
-                    <!-- <label for="email">Email:</label> -->
                     <input type="email" required placeholder="Email">
                 </div>
                 <div class="input-box">
@@ -57,7 +52,6 @@
                     <input type="date" value="YYY/mm/dd" required placeholder="yyy/mm/dd">
                 </div>
                 <div class="input-box">
-                    <!-- <label for="">Domicilio:</label> -->
                     <input type="text" placeholder="Domicilio" required pattern=".{4,}">
                 </div>
                 <div class="columna-caja">
@@ -110,25 +104,21 @@
                     <input type="file" name="avatar" accept=".jpg" multiple required>
                 </div>
                 <div class="input-box">
-                    <!-- <label for="">Contraseña:</label> -->
                     <input type="password" placeholder="Contraseña" pattern=".{6,}" required
                         title="Debe ingresar al menos 6 (seis) caracteres">
                 </div>
                 <div class="input-box">
-                    <!-- <label for="">Confirmar Contraseña:</label> -->
                     <input type="password" placeholder="Confirmar Contraseña" pattern=".{6,}" required
                         title="Debe ingresar al menos 6 (seis) caracteres">
                 </div>
                 <div class="form-btn">
                     <button class="borrar-btn" type="reset">Borrar</button>
                     <button class="submit-btn" type="submit">Registrarse</button>
-
                 </div>
                 <p class="login">
                     ¿Ya tenes una cuenta?
                     <a href="/login">login</a>
                 </p>
-
             </form>
         </section>
 
