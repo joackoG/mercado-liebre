@@ -65,6 +65,7 @@
     flex-direction: row;
     justify-content: center;
 }
+  
 .searchTerm {
     width: 80%;
     border: none;
@@ -298,7 +299,11 @@ main .articulo {
         display: none;
     }
 
-
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     #logo {
         width: 100%;
