@@ -56,14 +56,42 @@
     display: flex;
     align-items: end;
 }
+/* barra de busqueda */
 
 #searchBar {
+    width: 80%;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    flex-direction: row;
+    justify-content: center;
 }
-
+.searchTerm {
+    width: 80%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+  
+.searchTerm:focus{
+    color: #004fa3;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 30px;
+    border: none;
+    background: white;
+    text-align: center;
+    color: #666;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* fin */
 #navBar {
     display: flex;
 }
@@ -225,6 +253,11 @@ main .articulo {
     right: 20px;
     top: -15px;
     color: #39b54a;
+}
+/* Girar el ícono del camión en hover */
+.articulo:hover .product-delivery-icon {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
 }
 
 .logo-img {

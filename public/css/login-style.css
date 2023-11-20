@@ -1,3 +1,25 @@
+:root {
+  /* Paleta de colores */
+  --amarillo: #EAC926;
+  --azul: #03264C;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  /* Tipografía */
+  --font-familia: 'Roboto', sans-serif;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  /* margin: 0px; */
+  /* padding: 0px;  */
+  box-sizing: border-box;
+}
+
+
+
 .form {
     display: flex;
   }
